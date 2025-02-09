@@ -2,14 +2,38 @@ import Link from 'next/link';
 
 export default function NavBar() {
     return  (
-        <nav className=''>
-            <ul className=''>
-                <li><Link href="/">Home</Link></li>
-                <li><Link href="/our-story">Our Story</Link></li>
-                <li><Link href="/wedding-details">Wedding Day</Link></li>
-                <li><Link href="/wedding-party">Wedding Party</Link></li>
-                <li><Link href="/travel">Travel details</Link></li>
-            </ul>
+        <nav className="w-full p-4 bg-[var(--primary-color)] text-white shadow-md">
+            <div className="max-w-5xl mx-auto flex justify-between items-center">
+                <h1 className="text-xl charm-bold">Our Wedding</h1>
+                <ul className="flex gap-6 text-lg">
+                <li>
+                    <Link href="/" className="hover:underline">
+                    Home
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/our-story" className="hover:underline">
+                    Our Story
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/wedding-details" className="hover:underline">
+                    Wedding Details
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/travel" className="hover:underline">
+                    Travel
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/wedding-party" className="hover:underline">
+                    Wedding Party
+                    </Link>
+                </li>
+                </ul>
+            </div>
         </nav>
-    );
+  );
 }
+    
